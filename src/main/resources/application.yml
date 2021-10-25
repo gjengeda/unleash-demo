@@ -1,9 +1,6 @@
 server:
   servlet.context-path: /unleash-demo
 
-spring:
-  banner:
-    location: classpath:banner.txt
 unleash-demo:
   unleash:
     uri: https://unleash.herokuapp.com/api
