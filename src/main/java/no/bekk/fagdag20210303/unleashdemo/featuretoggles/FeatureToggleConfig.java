@@ -2,11 +2,9 @@ package no.bekk.fagdag20210303.unleashdemo.featuretoggles;
 
 import no.bekk.fagdag20210303.unleashdemo.UnleashDemoApplication;
 import no.finn.unleash.DefaultUnleash;
-import no.finn.unleash.FakeUnleash;
 import no.finn.unleash.Unleash;
 import no.finn.unleash.util.UnleashConfig;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -18,7 +16,7 @@ FeatureToggleConfig {
 
     @Bean
     public Unleash initializeUnleash(ByEnvironmentStrategy byEnvironmentStrategy,
-                                     ByEnhetStrategy byEnhetStrategy,
+                                     ByDepartmentStrategy byDepartmentStrategy,
                                      @Value("${unleash-demo.unleash.uri}") URI uri,
                                      // Token is read from environment
                                      @Value("${unleash-token}") String token) {
@@ -33,7 +31,7 @@ FeatureToggleConfig {
         return new DefaultUnleash(
                 config,
                 byEnvironmentStrategy,
-                byEnhetStrategy
+                byDepartmentStrategy
         );
     }
 
