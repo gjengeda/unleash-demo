@@ -19,11 +19,15 @@ FeatureToggleConfig {
     @Bean
     public Unleash initializeUnleash(ByEnvironmentStrategy byEnvironmentStrategy,
                                      ByEnhetStrategy byEnhetStrategy,
-                                     @Value("${unleash-demo.unleash.uri}") URI uri) {
+                                     @Value("${unleash-demo.unleash.uri}") URI uri,
+                                     // Token is read from environment
+                                     @Value("${unleash-token}") String token) {
         UnleashConfig config = UnleashConfig.builder()
                 .appName(UnleashDemoApplication.APP_NAME)
                 .instanceId(UnleashDemoApplication.APP_NAME + byEnvironmentStrategy.getEnvironment())
+                .environment(byEnvironmentStrategy.getEnvironment())
                 .unleashAPI(uri)
+                .customHttpHeader("Authorization", token)
                 .build();
 
         return new DefaultUnleash(
