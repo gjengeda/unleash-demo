@@ -6,6 +6,6 @@ unleash-demo:
     uri: https://unleash.herokuapp.com/api
 
 no.nav.security.jwt.issuer.iss-localhost:
-  discoveryurl: http://metadata-selvbetjening
+  discoveryurl: http://localhost:${mock-oauth2-server.port}/iss-localhost/.well-known/openid-configuration
   accepted_audience: aud-localhost
   cookiename: localhost-idtoken

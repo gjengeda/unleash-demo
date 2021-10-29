@@ -1,6 +1,7 @@
 package no.bekk.fagdag20210303.unleashdemo;
 
 import no.nav.security.token.support.spring.api.EnableJwtTokenValidation;
+import no.nav.security.token.support.spring.test.EnableMockOAuth2Server;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;

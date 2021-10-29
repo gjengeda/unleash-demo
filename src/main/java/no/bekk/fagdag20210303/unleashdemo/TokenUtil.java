@@ -4,15 +4,14 @@ import lombok.RequiredArgsConstructor;
 import no.nav.security.token.support.core.context.TokenValidationContext;
 import no.nav.security.token.support.core.context.TokenValidationContextHolder;
 import no.nav.security.token.support.core.jwt.JwtTokenClaims;
-import no.nav.security.token.support.test.spring.TokenGeneratorConfiguration;
-import org.springframework.context.annotation.Import;
+import no.nav.security.token.support.spring.test.EnableMockOAuth2Server;
 import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
 @Component
 @RequiredArgsConstructor
-@Import(TokenGeneratorConfiguration.class)
+@EnableMockOAuth2Server
 public class TokenUtil {
 
     private final TokenValidationContextHolder ctxHolder;
