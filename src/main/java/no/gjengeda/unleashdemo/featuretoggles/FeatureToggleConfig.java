@@ -1,6 +1,6 @@
-package no.bekk.fagdag20210303.unleashdemo.featuretoggles;
+package no.gjengeda.unleashdemo.featuretoggles;
 
-import no.bekk.fagdag20210303.unleashdemo.UnleashDemoApplication;
+import no.gjengeda.unleashdemo.UnleashDemoApplication;
 import no.finn.unleash.DefaultUnleash;
 import no.finn.unleash.Unleash;
 import no.finn.unleash.util.UnleashConfig;

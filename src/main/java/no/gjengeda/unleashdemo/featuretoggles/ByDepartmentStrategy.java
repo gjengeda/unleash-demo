@@ -1,4 +1,4 @@
-package no.bekk.fagdag20210303.unleashdemo.featuretoggles;
+package no.gjengeda.unleashdemo.featuretoggles;
 
 import lombok.RequiredArgsConstructor;
 import no.finn.unleash.UnleashContext;
@@ -6,8 +6,6 @@ import no.finn.unleash.strategy.Strategy;
 import org.springframework.stereotype.Component;
 
 import java.util.*;
-
-import static java.util.stream.Collectors.toList;
 
 @Component
 @RequiredArgsConstructor

@@ -1,10 +1,10 @@
-package no.bekk.fagdag20210303.unleashdemo.featuretoggles;
+package no.gjengeda.unleashdemo.featuretoggles;
 
 
 import lombok.RequiredArgsConstructor;
 import no.finn.unleash.Unleash;
 import no.finn.unleash.UnleashContext;
-import no.bekk.fagdag20210303.unleashdemo.TokenUtil;
+import no.gjengeda.unleashdemo.TokenUtil;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

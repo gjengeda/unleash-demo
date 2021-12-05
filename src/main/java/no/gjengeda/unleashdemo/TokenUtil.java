@@ -1,4 +1,4 @@
-package no.bekk.fagdag20210303.unleashdemo;
+package no.gjengeda.unleashdemo;
 
 import lombok.RequiredArgsConstructor;
 import no.nav.security.token.support.core.context.TokenValidationContext;

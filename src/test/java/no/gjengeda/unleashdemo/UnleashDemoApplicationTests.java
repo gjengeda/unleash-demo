@@ -1,4 +1,4 @@
-package no.bekk.fagdag20210303.unleashdemo;
+package no.gjengeda.unleashdemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

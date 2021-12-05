@@ -1,4 +1,4 @@
-package no.bekk.fagdag20210303.unleashdemo.featuretoggles;
+package no.gjengeda.unleashdemo.featuretoggles;
 
 
 import no.finn.unleash.strategy.Strategy;

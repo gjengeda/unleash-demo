@@ -1,4 +1,4 @@
-package no.bekk.fagdag20210303.unleashdemo;
+package no.gjengeda.unleashdemo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
