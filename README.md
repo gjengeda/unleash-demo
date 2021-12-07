@@ -31,8 +31,8 @@ The Token Generator Controller, and the framework for handling tokens, is provid
 ### Unleash
 
 The app uses Unleash's demo application at Heroku.
-* The user interface is available at https://unleash.herokuapp.com/ – publicly available by "logging in" with an email address.
-* The application accesses the API at https://unleash.herokuapp.com/api – **see the Unleash docs on how to get hold of a token for API access** – https://docs.getunleash.io/user_guide/api-token
+* The user interface is available at https://app.unleash-hosted.com/demo/login – publicly available by "logging in" with an email address.
+* The application accesses the API at https://app.unleash-hosted.com/demo/api – **see the Unleash docs on how to get hold of a token for API access** – https://docs.getunleash.io/user_guide/api-token
 
 Toggles and activation strategies can be created and configured in the web UI. See the Unleash documentation for details.
 * https://github.com/Unleash/unleash

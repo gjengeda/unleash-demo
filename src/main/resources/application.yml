@@ -3,7 +3,7 @@ server:
 
 unleash-demo:
   unleash:
-    uri: https://unleash.herokuapp.com/api
+    uri: https://app.unleash-hosted.com/demo/api/
 
 no.nav.security.jwt.issuer.iss-localhost:
   discoveryurl: http://localhost:${mock-oauth2-server.port}/iss-localhost/.well-known/openid-configuration
