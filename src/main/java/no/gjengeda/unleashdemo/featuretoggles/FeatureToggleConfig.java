@@ -17,6 +17,7 @@ FeatureToggleConfig {
     @Bean
     public Unleash initializeUnleash(ByEnvironmentStrategy byEnvironmentStrategy,
                                      ByDepartmentStrategy byDepartmentStrategy,
+                                     BetauserStrategy betauserStrategy,
                                      @Value("${unleash-demo.unleash.uri}") URI uri,
                                      // Token is read from environment
                                      @Value("${unleash-token}") String token) {
@@ -31,7 +32,8 @@ FeatureToggleConfig {
         return new DefaultUnleash(
                 config,
                 byEnvironmentStrategy,
-                byDepartmentStrategy
+                byDepartmentStrategy,
+                betauserStrategy
         );
     }
 
